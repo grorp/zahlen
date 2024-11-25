@@ -3,7 +3,7 @@
 
 	let { id, label, value = $bindable() }: { id: string; label: string; value: Thing } = $props();
 
-	let text = $state("000");
+	let text = $state(value.join(""));
 	let valid = $state(true);
 
 	$effect(() => {
@@ -16,7 +16,7 @@
 	});
 </script>
 
-<div>
+<div class="flex flex-col">
 	<label for={id}>{label}</label>
 	<input {id} type="tel" bind:value={text} maxlength={ThingLength} />
 	{#if !valid}
