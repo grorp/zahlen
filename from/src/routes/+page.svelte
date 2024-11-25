@@ -23,6 +23,8 @@
 	};
 </script>
 
+<title>The Thing</title>
+
 <div class="grid bg-white md:min-h-screen md:place-items-center md:bg-slate-100 md:p-8">
 	<div
 		class="flex w-screen max-w-screen-md flex-col gap-4 p-8 text-slate-700 md:rounded-xl md:bg-white md:shadow-lg"
