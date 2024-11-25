@@ -23,9 +23,9 @@
 	};
 </script>
 
-<div class="grid min-h-screen bg-white md:place-items-center md:bg-slate-100 md:p-8">
+<div class="grid bg-white md:min-h-screen md:place-items-center md:bg-slate-100 md:p-8">
 	<div
-		class="flex w-screen max-w-screen-md flex-col gap-4 rounded-xl bg-white p-8 text-slate-700 shadow-lg"
+		class="flex w-screen max-w-screen-md flex-col gap-4 p-8 text-slate-700 md:rounded-xl md:bg-white md:shadow-lg"
 	>
 		<h1 class="text-2xl font-bold text-slate-900">The Thing</h1>
 
