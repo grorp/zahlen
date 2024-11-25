@@ -23,8 +23,10 @@
 	};
 </script>
 
-<div class="grid h-screen place-items-center bg-slate-100">
-	<div class="flex max-w-screen-sm flex-col gap-8 rounded-xl bg-white p-8 text-slate-700 shadow-lg">
+<div class="grid min-h-screen bg-white md:place-items-center md:bg-slate-100 md:p-8">
+	<div
+		class="flex w-screen max-w-screen-md flex-col gap-4 rounded-xl bg-white p-8 text-slate-700 shadow-lg"
+	>
 		<h1 class="text-2xl font-bold text-slate-900">The Thing</h1>
 
 		<Condinput id="cond1" label="One Number Is Correct But Wrongly Placed" bind:value={cond1} />
@@ -35,7 +37,7 @@
 
 		<h3 class="text-lg font-bold text-slate-900">Solutions</h3>
 		{#if solutions.length > 0}
-			<ul class="flex flex-wrap gap-4">
+			<ul class="flex flex-wrap gap-2">
 				{#each solutions as sol}
 					<li>{sol.join("")}</li>
 				{/each}
